@@ -5,7 +5,7 @@ void update_bool_one_dead(t_philo *philos)
 	{
 		pthread_mutex_lock((philos->data->dead));
 
-		philos[i].one_dead = true;
+		philos[i].one_dead = false;
 		pthread_mutex_unlock(philos->data->dead);
 		
 		i++;
